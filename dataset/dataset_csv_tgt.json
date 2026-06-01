@@ -1,0 +1,23 @@
+{
+	"name": "dataset_csv_tgt",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linked_service_blob_storage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "tgt",
+				"container": "demo-container1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
