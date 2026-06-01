@@ -11,6 +11,9 @@
 		"linked_service_blob_storage_connectionString": {
 			"value": ""
 		},
+		"trigger_on_file_drop_properties_typeProperties_scope": {
+			"value": "/subscriptions/523407d7-55ea-4ce1-9b66-f88936885e71/resourceGroups/resource_group_01/providers/Microsoft.Storage/storageAccounts/sa01jdsatpathy"
+		},
 		"containerUri": {
 			"value": ""
 		},
