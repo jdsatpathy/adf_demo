@@ -1,0 +1,15 @@
+{
+	"name": "df-jd-01",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "837a94bd-a858-4da5-af36-0ab1016a1679",
+		"tenantId": "decbb861-0fce-48cb-b937-d225cd14f5e0"
+	}
+}
