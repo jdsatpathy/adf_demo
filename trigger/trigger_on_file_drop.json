@@ -1,0 +1,25 @@
+{
+	"name": "trigger_on_file_drop",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "adf-pipeline1",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/demo-container1/blobs/src/sec_bhavdata_full_",
+			"blobPathEndsWith": ".csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/523407d7-55ea-4ce1-9b66-f88936885e71/resourceGroups/resource_group_01/providers/Microsoft.Storage/storageAccounts/sa01jdsatpathy",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
