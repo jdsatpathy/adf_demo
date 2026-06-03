@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://www.nseindia.com/api/NextApi/apiClient/GetQuoteApi?functionName=getFinancialStatus&symbol=MARUTI",
+			"url": "https://www.nseindia.com",
 			"enableServerCertificateValidation": false,
 			"authenticationType": "Anonymous"
 		}
