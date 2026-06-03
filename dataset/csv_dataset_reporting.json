@@ -1,0 +1,23 @@
+{
+	"name": "csv_dataset_reporting",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linked_service_blob_storage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "rep",
+				"container": "demo-container1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
