@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Copy Src To Tgt",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -68,7 +68,7 @@
 				"type": "GetMetadata",
 				"dependsOn": [
 					{
-						"activity": "Copy data1",
+						"activity": "Copy Src To Tgt",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -105,7 +105,7 @@
 				"type": "Delete",
 				"dependsOn": [
 					{
-						"activity": "Copy data1",
+						"activity": "Copy Src To Tgt",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -134,7 +134,7 @@
 				}
 			},
 			{
-				"name": "ForEach1",
+				"name": "ForEach File In Tgt",
 				"type": "ForEach",
 				"dependsOn": [
 					{
@@ -153,7 +153,7 @@
 					"isSequential": true,
 					"activities": [
 						{
-							"name": "If Condition1",
+							"name": "If Filename Contains a Date",
 							"type": "IfCondition",
 							"dependsOn": [],
 							"userProperties": [],
