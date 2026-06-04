@@ -11,10 +11,6 @@
 			"location": {
 				"type": "HttpServerLocation",
 				"relativeUrl": "api/NextApi/apiClient/GetQuoteApi?functionName=getFinancialStatus&symbol=MARUTI"
-			},
-			"compression": {
-				"type": "deflate",
-				"level": "Optimal"
 			}
 		},
 		"schema": {}
